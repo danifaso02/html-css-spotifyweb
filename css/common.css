@@ -1,0 +1,16 @@
+.logo{
+    width: 100%;
+}
+ul > li{
+    padding: 10px 0;
+}
+h2,h3{
+    color: white;
+}
+li{
+    list-style: none;
+}
+a{
+    color: var(--text1-color);
+    text-decoration: none;
+}

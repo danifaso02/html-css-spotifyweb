@@ -14,3 +14,13 @@ a{
     color: var(--text1-color);
     text-decoration: none;
 }
+.playlist > img{
+    width: 100%;
+    display: block;
+}
+.intro{
+    margin: 30px 10px;
+}
+h2{
+    margin-bottom: 15px;
+}

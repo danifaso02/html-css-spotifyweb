@@ -30,8 +30,11 @@ header{
     display: flex;
     justify-content: flex-end;
 }
-header > button{
-    margin: 10px 0 30px;
+.upgrade{
+    margin: 20px 10px 25px;
+}
+.upgrade  button{
+    /* margin: 10px 0 30px; */
     padding: 20px 40px;
     border-radius: 30px;
 }
@@ -40,7 +43,7 @@ ASIDE
 ----------------*/
 .page-container{
     display: flex;
-    height: calc(100% - 80px);
+    height: calc(100vh - footer);
     background-color: var(--main-color);
 }
 aside{
@@ -49,6 +52,12 @@ aside{
     padding: 20px;
     align-items: flex-start;
     text-align: left;
+    display: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
 }
 .content{
     padding: 10px;
@@ -64,16 +73,15 @@ ul > li > img,.footer-aside > img{
 .footer-aside{
     flex-grow: 1;
 }
-/* #name-playlist{
-    overflow-y: scroll;
-} */
+
 /*----------------
 MAIN
 ----------------*/
 
 main{
-    width: calc(100% - 230px);
-    overflow-y: scroll;
+    max-width: calc(100% - 230px);
+    padding: 20px;
+    overflow-y: hidden;
 }
 #main-nav > ul{
     display: flex;
@@ -88,10 +96,18 @@ main{
     display: flex;
 }
 .playlist{
-    height: 200px;
-    width: calc(100% / 6);
-    background-color: #fff;
+    width: calc(100% / 6 - 20px);
     margin: 10px;
+    /* padding: 10px; */
+}
+.description-song{
+    text-align: center;
+}
+.description-song > h4{
+    margin: 10px 0;
+}
+.popular-artists > .row-playlist > .playlist > img{
+    border-radius: 100px;
 }
 
 /*----------------
@@ -99,16 +115,19 @@ FOOTER
 ----------------*/
 footer{
     position: sticky;
-    /* height: 80px; */
     background-color: var(--footer-color);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    z-index: 100;
 }
 .footer-row{
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    /* height: 80px; */
 }
 .song{
-    background-color: red;
     width: 25%;
 }
 .song > img{
@@ -117,11 +136,7 @@ footer{
 #song-playing{
     display: flex;
     margin: 20px 10px;
-    /* vertical-align: middle; */
 }
-/* #song-playing > li{
-    vertical-align: middle;
-} */
 #song-playing > li > img{
     margin-right: 10px;
     vertical-align: middle;
@@ -133,12 +148,9 @@ footer{
     margin-right: 15px;
 }
 .play-bar{
-    background-color: lightblue;
     width: 50%;
-
 }
 .video-audio{
-    background-color: #fff;
     width: 25%;
 }
 .play-bar > ul{
@@ -153,11 +165,9 @@ footer{
     justify-content: space-between;
 }
 .hrow{
-    color: var(--text1-color);
+    background-color: var(--text1-color);
     height: 5px;
     width: 70%;
-    justify-content: center;
-    align-items: center;
 }
 .time1,.time2{
     width: 15%;
@@ -170,4 +180,12 @@ footer{
 .video-audio > ul{
     display: flex;
     justify-content: center;
+}
+.video-audio > ul > li{
+    padding: 40px 15px;
+}
+.hrow.two{
+    color: var(--text1-color);
+    height: 5px;
+    width: 100px;
 }

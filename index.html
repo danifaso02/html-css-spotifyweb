@@ -14,7 +14,9 @@
 <body>
     <!-- HEADER -->
     <header>
-        <button>EFFETTUA L'UPGRADE</button>
+        <div class="upgrade">
+            <button>EFFETTUA L'UPGRADE</button>
+        </div>
     </header>
     <!-- MAIN -->
     <div class="page-container">
@@ -50,6 +52,11 @@
             
         </aside>
         <main>
+            <!-- <header>
+                <div class="upgrade">
+                    <button>EFFETTUA L'UPGRADE</button>
+                </div>
+            </header> -->
             <div class="navigation">
                 <nav id="main-nav">
                     <ul>
@@ -62,31 +69,95 @@
                     </ul>
                 </nav>
             </div>
+
             <div class="recently-played">
-                <h2>Recently played</h2>
+                <div class="intro">
+                    <h2>Recently played</h2>
+                </div>
                 <div class="row-playlist">
-                    <div class="playlist"></div>
-                    <div class="playlist"></div>
-                    <div class="playlist"></div>
-                    <div class="playlist"></div>
-                    <div class="playlist"></div>
-                    <div class="playlist"></div>
+                    <div class="playlist">
+                        <img src="img/metal_lifting.jpg" alt="">
+                        <div class="description-song">
+                            <h4>Heavy Metal</h4>
+                            <small>Subtitle</small>
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <img src="img/stranger.jpeg" alt="">
+                        <div class="description-song">
+                            <h4>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                            <small>Kyle Dixon & Micheal Stein</small>
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <img src="img/aquietplace.jpeg" alt="">
+                        <div class="description-song">
+                            <h4>A quiet place</h4>
+                            <small>Subtitle</small>
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <img src="img/split.jpeg" alt="">
+                        <div class="description-song">
+                            <h4>Split</h4>
+                            <small>Subtitle</small>
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <img src="img/cure.jpeg" alt="">
+                        <div class="description-song">
+                            <h4>A cure for wellness</h4>
+                            <small>Subtitle</small>
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <img src="img/sinister.jpeg" alt="">
+                        <div class="description-song">
+                            <h4>Sinister</h4>
+                            <small>Subtitle</small>
+                        </div>
+                    </div>
                 </div>
             </div>
+
             <div class="john-doe">
-                <h2>Creato per John Doe</h2>
-                <span>Più ascolti, più accurati saranno i suggerimenti.</span>
+                <div class="intro">
+                    <h2>Creato per John Doe</h2>
+                    <span>Più ascolti, più accurati saranno i suggerimenti.</span>
+                </div>
                 <div class="row-playlist">
-                    <div class="playlist"></div>
-                    <div class="playlist"></div>
+                    <div class="playlist">
+                        <img src="img/radar.jpeg" alt="">
+                        <div class="description-song">
+                            <h4>Release Radar</h4>
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <img src="img/mixdaily.jpeg" alt="">
+                        <div class="description-song">
+                            <h4>Daily Mix 1</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="popular-artists">
-                <h2>Artisti più popolari</h2>
-                <span>Più ascolti, più accurati saranno i suggerimenti.</span>
+                <div class="intro">
+                    <h2>Artisti più popolari</h2>
+                    <span>Più ascolti, più accurati saranno i suggerimenti.</span>
+                </div>
                 <div class="row-playlist">
-                    <div class="playlist"></div>
-                    <div class="playlist"></div>
+                    <div class="playlist">
+                        <img src="img/youg.jpeg" alt="">
+                        <div class="description-song">
+                            <h4>Ludovico Einaudi</h4>
+                        </div>
+                    </div>
+                    <div class="playlist">
+                        <img src="img/einaudi.jpeg" alt="">
+                        <div class="description-song">
+                            <h4>Lana Del Rey</h4>
+                        </div>          
+                    </div>
                 </div>
             </div>
         </main>
@@ -106,17 +177,17 @@
                 </div>
                 <div class="play-bar">
                     <ul>
-                        <li><i class="fa-regular fa-folder"></i></li>
-                        <li><i class="fa-regular fa-folder"></i></li>
-                        <li><img src="img/player_left.jpg" alt=""></li>
-                        <li><i class="fa-regular fa-folder"></i></li>
-                        <li><i class="fa-regular fa-folder"></i></li>
+                        <li><i class="fa-solid fa-shuffle"></i></li>
+                        <li><i class="fa-solid fa-backward-step"></i></li>
+                        <li><i class="fa-solid fa-circle-play"></i></li>
+                        <li><i class="fa-solid fa-forward-step"></i></li>
+                        <li><i class="fa-sharp fa-solid fa-rotate-right"></i></li>
                     </ul>
                     <div class="bar">
                         <div class="time1">
                             <small>0:25</small>
                         </div>
-                        <div class="hrow"><hr></div>
+                        <div class="hrow"></div>
                         <div class="time2">
                             <small>4:35</small>
                         </div>
@@ -124,10 +195,10 @@
                 </div>
                 <div class="video-audio">
                     <ul>
-                        <li><i class="fa-regular fa-folder"></i></li>
-                        <li><i class="fa-regular fa-folder"></i></li>
-                        <li><i class="fa-regular fa-folder"></i></li>
-                        <li><hr></li>
+                        <li><i class="fa-sharp fa-solid fa-list"></i></li>
+                        <li><i class="fa-solid fa-tv"></i></li>
+                        <li><i class="fa-sharp fa-solid fa-volume-high"></i></li>
+                        <li><div class="hrow two"></div></li>
                     </ul>
                 </div>
             </div>
